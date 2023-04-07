@@ -1,0 +1,23 @@
+<!--pages/chat/chat_l3.wxml-->
+<view class="chat-container">
+  <view class="chat-header">
+    <view class="chat-avatar">
+      <image src="{{avatar}}" mode="aspectFill"></image>
+    </view>
+    <text class="chat-nickname">{{nickname}}</text>
+  </view>
+  <scroll-view class="chat-message" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+    <view wx:for="{{messageList}}" wx:key="{{index}}">
+      <view class="chat-message-item {{item.self ? 'self' : ''}}">
+        <view class="chat-message-content">
+          {{item.content}}
+        </view>
+        <view class="chat-message-time">{{item.time}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="chat-input-container">
+    <input class="chat-input" placeholder="请输入消息" value="{{inputValue}}" bindinput="onInputChange"></input>
+    <button class="chat-send" bindtap="onSendMessage">发送</button>
+  </view>
+</view>

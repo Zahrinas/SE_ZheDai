@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/msg_center_l1/msg_center_l1",
+    "pages/chat_list_l2/chat_list_l2",
+    "pages/chat_l3/chat_l3",
+    "pages/appeal/appeal",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "subPackages": [
+    
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

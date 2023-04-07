@@ -1,0 +1,16 @@
+/**mag_center_l1.wxss**/
+/* 修改整体布局大小 */
+.MsgCenterPageContainer{
+  width: 100%;
+  height: 100%;
+}
+.button{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 45rpx;
+  margin: 200rpx;
+}

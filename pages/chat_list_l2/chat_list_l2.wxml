@@ -1,0 +1,15 @@
+<!--pages/chat_list_l2/chat_list_l2.wxml-->
+<scroll-view class="chat-list" scroll-y="true">
+  <view class="chat-item" wx:for="{{chatList}}" wx:key="{{item.id}}" data-chat-item="{{item}}" bindtap="onItemClick">
+    <view class="avatar">
+      <image src="{{item.avatar}}"></image>
+    </view>
+    <view class="content">
+      <view class="info">
+        <text class="nickname">{{item.nickname}}</text>
+        <text class="time">{{item.time}}</text>
+      </view>
+      <view class="last-message">{{item.lastMsg}}</view>
+    </view>
+  </view>
+</scroll-view>
