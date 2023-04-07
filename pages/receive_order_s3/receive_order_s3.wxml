@@ -1,0 +1,29 @@
+<!--pages/receive_order_s1/receive_order_s1.wxml-->
+<scroll-view scroll-x class="selectSchool" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="school" wx:for="{{schoolList}}" wx:key="id" bindtap="tabSchool" data-id="{{index}}">
+    <view class="schoolText {{index==schoolCur?'schoolOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-x class="selectType" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="type" wx:for="{{typeList}}" wx:key="id" bindtap="tabType" data-id="{{index}}">
+    <view class="typeText {{index==typeCur?'typeOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+
+
+<scroll-view scroll-y class="orderContainer"scroll-with-animation enable-flex="true">
+  <view class="order"  wx:for="{{orderList}}" wx:key="id">
+    <navigator url="/pages/receive_order_s2/receive_order_s2?id={{item.id}}">
+    <image class="img"style="height: 200rpx; width: 200rpx;" mode="aspectFit" src="{{item.posterHeadImg}}"></image>
+    <view class="orderInfo">
+      <view class="school">{{item.school}}</view>
+      <view class="type" >{{item.type}}</view>
+      <view class="time" >{{item.time}}</view>
+    </view>
+    </navigator>
+  </view>
+</scroll-view>
+
+
