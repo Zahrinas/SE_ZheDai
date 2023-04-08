@@ -1,10 +1,18 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/receive_order_s1/receive_order_s1",
+    "pages/receive_order_s3/receive_order_s3",
+    "pages/receive_order_s2/receive_order_s2",
     "pages/msg_center_l1/msg_center_l1",
     "pages/chat_list_l2/chat_list_l2",
     "pages/chat_l3/chat_l3",
     "pages/appeal/appeal",
-    "pages/logs/logs"
+    "pages/self_inform_J2/self_inform_J2",
+    "pages/put_order_J1/put_order_J1",
+    "pages/edit_inform_J3/edit_inform_J3",
+    "pages/other_inform_J4/other_inform_J4"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,9 +20,8 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
-  "subPackages": [
-    
-  ],
+  "usingComponents": {},
+  "subPackages": [],
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

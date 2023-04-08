@@ -1,0 +1,61 @@
+/* pages/receive_order_s2/receive_order_s2.wxss */
+
+/* pages/receive_order_s3/receive_order_s3.wxss */
+
+
+.orderContainer{
+  width: 100%;
+  
+  position:fixed;
+  left: 0rpx;
+  top: 0rpx;
+}
+
+.order{
+  height:100%;
+  width:100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid rgb(0, 0, 0);
+  background: rgb(96, 247, 196);
+  align-items: center;
+  flex-direction: row;
+}
+
+/*图像格式调麻了*/
+.order.img{
+  align-items: center;
+
+  
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: rgb(96, 247, 196);
+  flex-direction: row;
+ 
+}
+
+.order .orderInfo .school {
+  color: #fbbd08;
+  font-size: 32rpx;
+}
+.order .orderInfo .type {
+  justify-content: space-between;
+  align-items: center;
+  color: chocolate;
+}
+.order .orderInfo .time {
+  font-size:24rpx;
+  color:#999999;
+}
+
+.button
+{
+
+  background-color:rgb(255, 0, 0);
+  color: #ffffff;
+  font-size: 50rpx;
+
+  position:fixed;
+  left:325rpx;
+}
