@@ -1,2 +1,10 @@
 <!--pages/other_inform_J4/other_inform_J4.wxml-->
-<text>pages/other_inform_J4/other_inform_J4.wxml</text>
+
+
+<view>
+  <text>昵称: </text>
+</view>
+
+<button>
+  <text>私聊</text>
+</button>

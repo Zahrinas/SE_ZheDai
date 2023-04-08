@@ -1,2 +1,27 @@
 <!--pages/edit_inform_J3/edit_inform_J3.wxml-->
-<text>pages/edit_inform_J3/edit_inform_J3.wxml</text>
+
+<button class="button" bindtap="headImg">
+  <text>上传头像</text>
+</button>
+
+
+
+<view class="editInfo">
+<view class="nickname">
+  <text>昵称:</text>
+  <input bindinput="nickname"></input>
+</view>
+
+<view class="school"> 
+  <text>校区:</text>
+  <input bindinput="school"></input>
+</view>
+
+<view class="vx">
+  <text>联系方式:</text>
+  <input bindinput="vx"></input>
+</view>
+</view>
+<button class="button" bindtap="tap">
+  <text>确认</text>
+</button>

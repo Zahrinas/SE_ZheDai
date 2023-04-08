@@ -13,7 +13,7 @@ Page({
   },
   // 事件处理函数
   bindViewTap() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../receive_order_s1/receive_order_s1'
     })
   },

@@ -1,1 +1,16 @@
 /* pages/edit_inform_J3/edit_inform_J3.wxss */
+.nickname{
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+}
+.school{
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+}
+.vx{
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+}

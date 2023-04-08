@@ -1,13 +1,193 @@
 /* pages/put_order_J1/put_order_J1.wxss */
 
 .container1 view {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
+  width: 0%;
+  height: 90rpx;
+  /* 文本不换行 */
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+  /* 固定在顶部 */
+  
+  position: fixed;
+  left: 0%;
+  top: 0rpx;
 }
 
-.container1 {
-  width: 100px;
-  height: 100px;
+.container2 view {
+  width: 0%;
+  height: 90rpx;
+  /* 文本不换行 */
+  white-space: nowrap;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+  /* 固定在顶部 */
+  
+  position: fixed;
+  left: 0%;
+  top: 90rpx;
+}
+
+
+.selectSchool {
+  width: 25%;
+  height: 90rpx;
+  /* 文本不换行 */
+  /*white-space: nowrap;*/
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+  /* 固定在顶部 */
+  
+  position: fixed;
+  left: 20%;
+  top: 0rpx;
+  
+}
+
+.school {
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  height: 100%;
+  display: inline-block;
+  /* 普通文字大小 */
+  font-size: 28rpx;
+}
+
+.schoolText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4rpx;
+  box-sizing: border-box;
+}
+
+.schoolOn {
+  color: #fbbd08;
+  /*选中动画*/
+  font-size: 38rpx !important;
+  font-weight: 600;
+  border-bottom: 4rpx solid #fbbd08 !important;
+}
+
+
+
+.selectType {
+  width: 25%;
+   height: 90rpx;
+  /* 文本不换行 */
+  /*white-space: nowrap;*/
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+  /* 固定在顶部 */
+  position: fixed;
+  left: 20%;
+  top: 90rpx;
+}
+
+.type {
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  height: 100%;
+  display: inline-block;
+  /* 普通文字大小 */
+  font-size: 28rpx;
+}
+
+.typeText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4rpx;
+  box-sizing: border-box;
+}
+
+.typeOn {
+  color:chocolate;
+  /*选中动画*/
+  font-size: 38rpx !important;
+  font-weight: 600;
+  border-bottom: 4rpx solid chocolate !important;
+}
+
+
+
+.order{
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid rgb(0, 0, 0);
+  background: rgb(96, 247, 196);
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.order.img{
+  align-items: center;
+
+  display: flex;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  background: rgb(96, 247, 196);
+  flex-direction: row;
+ 
+}
+
+
+.order .orderInfo .school {
+  color: #fbbd08;
+  font-size: 32rpx;
+}
+.order .orderInfo .type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: chocolate;
+}
+.order .orderInfo .time {
+  font-size:24rpx;
+  color:#999999;
+}
+
+.PutButton {
+  position: fixed;
+  left: 25%;
+  top:90%
+}
+
+
+.OrderInform {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:25%;
+}
+
+.OrderInput {
+  flex: 0.9;
+  height: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  border: 1rpx solid #f0f0f0;
+  font-size: 28rpx;
+  text-align: left;
+  color: #333;
 }

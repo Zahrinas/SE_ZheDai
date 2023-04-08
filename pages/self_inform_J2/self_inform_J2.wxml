@@ -3,7 +3,9 @@
 <image src="/imgs/head_photo.jpeg" mode="aspectFit"></image>
 
 <view>昵称:</view>
+<view>ID:</view>
 <view>校区:</view>
 <view>联系方式:</view>
+
 
 <button class="button" id="OrderHistory" bindtap="EditClick">编辑</button>

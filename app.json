@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/receive_order_s1/receive_order_s1",
     "pages/index/index",
+    "pages/receive_order_s1/receive_order_s1",
+    
     "pages/logs/logs",
     "pages/receive_order_s3/receive_order_s3",
     "pages/receive_order_s2/receive_order_s2",
