@@ -1,7 +1,7 @@
 <!--pages/receive_order_s2/receive_order_s2.wxml-->
 <view class="orderContainer"   enable-flex="true" wx:key="id">
   <view class="order">
-    <navigator url="这里是它人信息页面导航路径? id={{order.posterId}}">
+    <navigator url="/pages/other_inform_J4/other_inform_J4?id={{order.posterId}}">
     <image class="img"style="height: 200rpx; width: 200rpx;" mode="aspectFit" src="{{order.posterHeadImg}}"></image></navigator>
     <view class="orderInfo">
       <view class="posterId">发单人id：{{order.posterId}}</view>

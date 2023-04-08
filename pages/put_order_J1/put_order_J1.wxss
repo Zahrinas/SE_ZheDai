@@ -1,1 +1,13 @@
 /* pages/put_order_J1/put_order_J1.wxss */
+
+.container1 view {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 {
+  width: 100px;
+  height: 100px;
+}

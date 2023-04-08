@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/receive_order_s1/receive_order_s1",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/receive_order_s1/receive_order_s1",
     "pages/receive_order_s3/receive_order_s3",
     "pages/receive_order_s2/receive_order_s2",
     "pages/msg_center_l1/msg_center_l1",
@@ -20,8 +20,42 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
+  "usingComponents": {
+    
+  },
   "subPackages": [],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/receive_order_s1/receive_order_s1",
+        "iconPath": "static/img/default.jpg",
+        "selectedIconPath": "static/img/default.jpg",
+        "text": "接单"
+      },
+      {
+        "pagePath": "pages/put_order_J1/put_order_J1",
+        "iconPath": "static/img/default.jpg",
+        "selectedIconPath": "static/img/default.jpg",
+        "text": "发帖"
+      },
+      {
+        "pagePath": "pages/msg_center_l1/msg_center_l1",
+        "iconPath": "static/img/default.jpg",
+        "selectedIconPath": "static/img/default.jpg",
+        "text": "消息中心"
+      },
+      {
+        "pagePath": "pages/self_inform_J2/self_inform_J2",
+        "iconPath": "static/img/default.jpg",
+        "selectedIconPath": "static/img/default.jpg",
+        "text": "个人信息"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

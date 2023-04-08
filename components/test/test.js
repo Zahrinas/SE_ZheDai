@@ -1,4 +1,4 @@
-// custom-tab-bar/index.js
+// components/test/test.js
 Component({
   /**
    * Component properties
@@ -11,15 +11,13 @@ Component({
    * Component initial data
    */
   data: {
-    active: 0
+
   },
 
   /**
    * Component methods
    */
   methods: {
-    onChange(event) {
-      console.log(event.detail);
-    }
+
   }
 })

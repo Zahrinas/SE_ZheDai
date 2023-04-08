@@ -7,6 +7,11 @@ Page({
   data: {
 
   },
+  EditClick: function(){
+    wx.navigateTo({
+      url: "../edit_inform_J3/edit_inform_J3"
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load

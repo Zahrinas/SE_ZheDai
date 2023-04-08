@@ -1,2 +1,9 @@
 <!--pages/self_inform_J2/self_inform_J2.wxml-->
-<text>pages/self_inform_J2/self_inform_J2.wxml</text>
+<image></image>
+<image src="/imgs/head_photo.jpeg" mode="aspectFit"></image>
+
+<view>昵称:</view>
+<view>校区:</view>
+<view>联系方式:</view>
+
+<button class="button" id="OrderHistory" bindtap="EditClick">编辑</button>

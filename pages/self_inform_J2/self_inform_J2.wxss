@@ -1,1 +1,5 @@
 /* pages/self_inform_J2/self_inform_J2.wxss */
+image {
+  
+  height: 100px;
+}
