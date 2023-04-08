@@ -19,7 +19,7 @@ Page({
   OrderHistoryClick: function() {
     // 整合时此处路径改为历史订单界面
     wx.navigateTo({
-      url: "../chat_l3/chat_l3"
+      url: "../receive_order_s3/receive_order_s3"
     })
   },
   // 跳转至聊天列表界面
