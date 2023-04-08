@@ -83,7 +83,7 @@ Page({
       }
     });
 
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/receive_order_s1/receive_order_s1'
     });
   },

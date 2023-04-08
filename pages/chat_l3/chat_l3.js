@@ -10,7 +10,8 @@ Page({
     avatar: '',
     nickname: '',
     id: '',
-    inputValue: '' // 输入框的内容
+    inputValue: '', // 输入框的内容
+    messageList:[]
   },
 
   /**
@@ -58,6 +59,23 @@ Page({
         ]
       });
     }
+
+    /*
+  *这是设想的对后端的请求
+  /////////////////////////////
+
+  var that = this;
+  wx.request({
+    url: 'https://我们的后端域名',
+    success: function(mss) {
+      that.setData({
+        messageList: mss.data
+      });
+    }
+  });
+
+  /////////////////////////////
+  */
   },
   
 
@@ -99,6 +117,20 @@ Page({
     // 获取聊天记录列表
     const messageList = this.data.messageList;
     // 构造一个新的消息对象，添加到聊天记录列表中
+
+    //提交数据
+    wx.request({
+      url: '后端的url',
+      method: 'POST',
+      data: {
+        value: messageList
+      },
+      success: function(res) {
+        console.log(res.data);
+      }
+    });
+
+
     messageList.push({
       id: messageList.length + 1,
       // 此处nickname为自己的昵称，应该可以直接从后端获取

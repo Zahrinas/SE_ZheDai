@@ -19,7 +19,7 @@
 </view>
 
 
-<button class="PutButton" id="change" bindtap="SendOrder">
+<button class="PutButton" id="change" bindtap="sendOrder">
 <text>发布</text>
 </button>
 

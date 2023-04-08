@@ -17,6 +17,23 @@ Page({
       }
     ]
     this.setData({ chatList }) // 将初始数据设置为上述模拟数据
+
+    /*
+  *这是设想的对后端的请求
+  /////////////////////////////
+
+  var that = this;
+  wx.request({
+    url: 'https://我们的后端域名',
+    success: function(chat) {
+      that.setData({
+        chatList: chat.data
+      });
+    }
+  });
+
+  /////////////////////////////
+  */
   },
 
 

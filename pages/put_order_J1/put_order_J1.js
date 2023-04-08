@@ -7,7 +7,7 @@ Page({
   data: {
     schoolCur: 0, //默认选中
     schoolList: [{
-        name: '紫荆港',
+        name: '紫金港',
         id: 0
       },
       {
@@ -147,6 +147,24 @@ Page({
 
   },
 
+  sendOrder(e)
+  {
+    //提交数据
+    wx.request({
+      url: '后端的url',
+      method: 'POST',
+      data: {
+        value: this.order
+      },
+      success: function(res) {
+        console.log(res.data);
+      }
+    });
+
+    wx.switchTab({
+      url: '/pages/receive_order_s1/receive_order_s1'
+    });
+  },
   /**
    * 生命周期函数--监听页面显示
    */
