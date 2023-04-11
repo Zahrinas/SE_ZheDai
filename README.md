@@ -5,6 +5,7 @@
 采用微信小程序端
 
 开发环境：
+
 前端：略
 
 后端：
@@ -13,9 +14,9 @@ Java SE 20 https://www.oracle.com/java/technologies/downloads/#jdk20-windows
 
 NetBeans IDE 17 https://netbeans.apache.org/download/nb17/
 
-    Plugin:
+Plugin:
 
-    NB Spring Boot 3.1 for NB 12.0 https://plugins.netbeans.apache.org/catalogue/?id=4
+NB Spring Boot 3.1 for NB 12.0 https://plugins.netbeans.apache.org/catalogue/?id=4
 
 Maven 3.8.7 我想NetBeans 17应该会自带
 
