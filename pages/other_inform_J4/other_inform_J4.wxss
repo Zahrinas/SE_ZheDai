@@ -1,1 +1,5 @@
 /* pages/other_inform_J4/other_inform_J4.wxss */
+image {
+  
+  height: 100px;
+}

@@ -7,6 +7,8 @@ Page({
    */
   data: {
     // 接收传入的参数
+    sendId: '',
+    receiveId: '',
     avatar: '',
     nickname: '',
     id: '',
@@ -24,8 +26,9 @@ Page({
     if (options.chatData) {
       const chatData = JSON.parse(decodeURIComponent(options.chatData));
       this.setData({
-        avatar: chatData.avatar,
-        nickname: chatData.nickname,
+
+        sendId: chatData.sendId,
+        receiveId: chatData.receiveId,
         // 前端模拟的聊天记录，后端开发时删掉：
         messageList: [
           {
@@ -59,7 +62,17 @@ Page({
         ]
       });
     }
-
+    // 把发送者和接收者的ID发给后端
+    wx.request({
+      url: '后端的url',
+      method: 'POST',
+      data: {
+        value: this.data
+      },
+      success: function(res) {
+        console.log(res.data);
+      }
+    });
     /*
   *这是设想的对后端的请求
   /////////////////////////////

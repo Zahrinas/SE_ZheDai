@@ -10,6 +10,8 @@ Page({
     const chatList = [
       {
         id: 1,
+        sendId :1,
+        receiveId: 2,
         avatar: '../../static/img/avatar2.jpg',
         nickname: '尹建伟',
         lastMsg: '你好',
@@ -90,8 +92,8 @@ Page({
   onItemClick: function (event) {
     //console.log(event);
     const item = {
-      avatar: event.currentTarget.dataset.chatItem.avatar,
-      nickname: event.currentTarget.dataset.chatItem.nickname
+      sendId: event.currentTarget.dataset.chatItem.sendId,
+      receiveId: event.currentTarget.dataset.chatItem.receiveId
     };
     //console.log(item);
     const params = encodeURIComponent(JSON.stringify(item));

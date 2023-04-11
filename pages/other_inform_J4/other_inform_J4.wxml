@@ -1,10 +1,11 @@
-<!--pages/other_inform_J4/other_inform_J4.wxml-->
+<!--pages/self_inform_J2/self_inform_J2.wxml-->
+<image></image>
+<image src="{{info.avatar}}" mode="aspectFit"></image>
+
+<view>昵称:"{{info.nickname}}"</view>
+<view>ID:"{{info.id}}"</view>
+<view>校区:"{{info.school}}"</view>
+<view>联系方式:"{{info.vx}}"</view>
 
 
-<view>
-  <text>昵称: </text>
-</view>
-
-<button>
-  <text>私聊</text>
-</button>
+<button class="button" id="OrderHistory" bindtap="EditClick">私聊</button>

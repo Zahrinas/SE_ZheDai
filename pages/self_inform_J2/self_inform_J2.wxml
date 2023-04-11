@@ -1,11 +1,11 @@
 <!--pages/self_inform_J2/self_inform_J2.wxml-->
 <image></image>
-<image src="/imgs/head_photo.jpeg" mode="aspectFit"></image>
+<image src="{{info.avatar}}" mode="aspectFit"></image>
 
-<view>昵称:</view>
-<view>ID:</view>
-<view>校区:</view>
-<view>联系方式:</view>
+<view>昵称:"{{info.nickname}}"</view>
+<view>ID:"{{info.id}}"</view>
+<view>校区:"{{info.school}}"</view>
+<view>联系方式:"{{info.vx}}"</view>
 
 
 <button class="button" id="OrderHistory" bindtap="EditClick">编辑</button>
