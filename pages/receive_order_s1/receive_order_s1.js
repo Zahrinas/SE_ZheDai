@@ -79,6 +79,38 @@ Page({
       schoolCur: e.currentTarget.dataset.id,
       scrollLeft: (e.currentTarget.dataset.id - 2) * 200
     })
+
+
+
+    //这是设想的对后端的请求
+  /////////////////////////////
+
+  var that = this;
+  wx.request({
+    url: 'http://localhost:8080',
+    data:{
+      select: '1',//select为'1'时，为筛选请求
+      id: 'null',//string类，为非筛选条件置为'null'
+      posterId: 'null',//string类
+      nickName: 'null',//string类，为非筛选条件置为'null'
+      posterHeadImg: 'null',//string类
+      riderId: 'null',//string类
+      school: schoolList[schoolCur].name,//string类
+      type: typeList[typeCur].name,//string类
+      time: 'null',//string类
+      reward:'null',//string类
+      comment:'null'//string类
+    },
+    success: function(res) {
+      that.setData({
+        orderList: res.data
+      });
+    }
+  });
+
+  this.setData({orderList})
+
+  /////////////////////////////
   },
 
     tabType(e) {
@@ -86,6 +118,37 @@ Page({
         typeCur: e.currentTarget.dataset.id,
         scrollLeft: (e.currentTarget.dataset.id - 2) * 200
       })
+
+
+      //这是设想的对后端的请求
+  /////////////////////////////
+
+  var that = this;
+  wx.request({
+    url: 'http://localhost:8080',
+    data:{
+      select: '1',//select为'1'时，为筛选请求
+      id: 'null',//string类，为非筛选条件置为'null'
+      posterId: 'null',//string类
+      nickName: 'null',//string类，为非筛选条件置为'null'
+      posterHeadImg: 'null',//string类
+      riderId: 'null',//string类
+      school: schoolList[schoolCur].name,//string类
+      type: typeList[typeCur].name,//string类
+      time: 'null',//string类
+      reward:'null',//string类
+      comment:'null'//string类
+    },
+    success: function(res) {
+      that.setData({
+        orderList: res.data
+      });
+    }
+  });
+
+  this.setData({orderList})
+
+  /////////////////////////////
     },
   
 
@@ -96,6 +159,7 @@ Page({
     /*
     *以下是测试用的样例
     */
+   /*
    const orderList=[
     {
       id:'114514',
@@ -120,24 +184,40 @@ Page({
       备注:'接单之后微信私聊告诉你龟钥匙放哪里'
     }
   ]
+  
   this.setData({orderList})
-
-  /*
-  *这是设想的对后端的请求
+*/
+  
+  //这是设想的对后端的请求
   /////////////////////////////
 
   var that = this;
   wx.request({
-    url: 'https://我们的后端域名',
-    success: function(order) {
+    url: 'http://localhost:8080',
+    data:{
+      select: '1',//select为'1'时，为筛选请求
+      id: 'null',//string类，为非筛选条件置为'null'
+      posterId: 'null',//string类
+      nickName: 'null',//string类，为非筛选条件置为'null'
+      posterHeadImg: 'null',//string类
+      riderId: 'null',//string类
+      school: schoolList[schoolCur].name,//string类
+      type: typeList[typeCur].name,//string类
+      time: 'null',//string类
+      reward:'null',//string类
+      comment:'null'//string类
+    },
+    success: function(res) {
       that.setData({
-        orderList: order.data
+        orderList: res.data
       });
     }
   });
 
+  this.setData({orderList})
+
   /////////////////////////////
-  */
+
   },
 
   /**
