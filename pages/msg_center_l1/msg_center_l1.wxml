@@ -1,0 +1,7 @@
+<view class="MsgCenterPageContainer">
+  <view class="vertical-container">
+    <button class="button" id="OrderHistory" bindtap="OrderHistoryClick">历史订单</button>
+    <button class="button" id="ChatList" bindtap="ChatListClick">聊天列表</button>
+    <button class="button" id="Appeal" bindtap="AppealClick">举报申诉</button>
+  </view>
+</view>

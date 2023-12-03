@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "历史订单列表",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

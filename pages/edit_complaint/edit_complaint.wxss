@@ -1,0 +1,34 @@
+.weui-cells_after-title {
+  padding: 20rpx;
+}
+
+.weui-cell {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.weui-cell__bd {
+  flex: 1;
+}
+
+.weui-label {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.weui-input-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.weui-input {
+  flex: 1;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #333333;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

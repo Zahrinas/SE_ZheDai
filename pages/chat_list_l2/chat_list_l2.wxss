@@ -1,0 +1,58 @@
+/* pages/chat_list_l2/chat_list_l2.wxss */
+.chat-list {
+  height: 100%;
+}
+
+.chat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.chat-item .avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 20rpx;
+}
+
+.chat-item .avatar image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+
+.chat-item .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-item .content .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.chat-item .content .info .nickname {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.chat-item .content .info .time {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.chat-item .content .last-message {
+  font-size: 28rpx;
+  color: rgb(22, 21, 21);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

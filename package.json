@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "docxtemplater": "^3.37.9",
+    "weui": "^2.5.16",
+    "weui-miniprogram": "^1.2.7"
+  },
+  "name": "se_zhedai",
+  "description": "软件工程项目：浙带",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}

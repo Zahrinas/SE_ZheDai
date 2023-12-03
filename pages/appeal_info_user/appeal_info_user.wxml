@@ -1,0 +1,15 @@
+<!--pages/appeal_info_user/appeal_info_user.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="left">
+      <image class="avatar" src="{{plaintiffAvatar}}" />
+      <text class="nickname">{{plaintiffNickname}}</text>
+    </view>
+    <view class="right">
+      <image class="avatar" src="{{defendantAvatar}}" />
+      <text class="nickname">{{defendantNickname}}</text>
+    </view>
+  </view>
+  <view class="reason">{{reason}}</view>
+  <view class="appeal-status">{{appealStatus}}</view> <!-- 新增状态文本框 -->
+</view>

@@ -1,0 +1,21 @@
+<!--pages/appeal_info/appeal_info.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="left">
+      <image class="avatar" src="{{plaintiffAvatar}}" />
+      <text class="nickname">{{plaintiffNickname}}</text>
+    </view>
+    <view class="right">
+      <image class="avatar" src="{{defendantAvatar}}" />
+      <text class="nickname">{{defendantNickname}}</text>
+    </view>
+  </view>
+  <view class="reason">{{reason}}</view>
+  <view class="button-group">
+    <button class="chat" bindtap="goToChat">查看聊天记录</button>
+    <view class="button-container">
+      <button class="valid" bindtap="setValid">有效</button>
+      <button class="invalid" bindtap="setInvalid">无效</button>
+    </view>
+  </view>
+</view>

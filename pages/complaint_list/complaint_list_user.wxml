@@ -1,0 +1,17 @@
+<view class="complaintContainer">
+  <scroll-view scroll-y class="complaintList">
+    <view class="weui-panel weui-panel_access" wx:for="{{complaintList}}" wx:key="id">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg" bindtap="navigateToAppealInfo" data-id="{{item.id}}">
+          <view class="weui-media-box__hd">
+            <image class="weui-media-box__thumb" src="{{item.posterAvatarUrl}}"></image>
+            <image class="weui-media-box__thumb" src="{{item.riderAvatarUrl}}"></image>
+          </view>
+          <view class="weui-media-box__bd">
+            <view class="weui-media-box__title">{{item.valid}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

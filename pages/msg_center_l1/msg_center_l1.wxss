@@ -1,0 +1,28 @@
+.MsgCenterPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin-bottom: 100px;
+  width: 200px;
+  padding: 12px;
+  font-size: 24px;
+  text-align: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:last-child {
+  margin-bottom: 0;
+}

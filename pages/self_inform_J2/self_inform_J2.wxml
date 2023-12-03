@@ -1,0 +1,23 @@
+<!--pages/self_inform_J2/self_inform_J2.wxml-->
+
+<image src="{{info.avatar}}" mode="aspectFit"></image>
+<form class="weui-form-preview">
+  <view class="form-item">
+    <view class="weui-form-preview__label">昵称：</view>
+    <view class="weui-form-preview__value">{{info.nickname}}</view>
+  </view>
+  <view class="form-item">
+    <view class="weui-form-preview__label">ID：</view>
+    <view class="weui-form-preview__value">{{info.id}}</view>
+  </view>
+  <view class="form-item">
+    <view class="weui-form-preview__label">校区：</view>
+    <view class="weui-form-preview__value">{{info.school}}</view>
+  </view>
+  <view class="form-item">
+    <view class="weui-form-preview__label">联系方式：</view>
+    <view class="weui-form-preview__value">{{info.vx}}</view>
+  </view>
+</form>
+
+<button class="weui-btn_cell weui-btn_cell-primary" id="OrderHistory" bindtap="EditClick">编辑</button>

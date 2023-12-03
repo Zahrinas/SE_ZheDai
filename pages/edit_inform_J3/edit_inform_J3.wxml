@@ -1,0 +1,17 @@
+<view class="editInfo">
+  <form class="weui-form">
+    <view class="weui-form__control">
+      <label class="weui-label">昵称</label>
+      <input class="weui-input" bindinput="nickname" placeholder="请输入昵称" />
+    </view>
+    <view class="weui-form__control">
+      <label class="weui-label">校区</label>
+      <input class="weui-input" bindinput="school" placeholder="请输入校区" />
+    </view>
+    <view class="weui-form__control">
+      <label class="weui-label">联系方式</label>
+      <input class="weui-input" bindinput="vx" placeholder="请输入联系方式" />
+    </view>
+  </form>
+</view>
+<button class="weui-btn weui-btn_primary" bindtap="tap">确认</button>

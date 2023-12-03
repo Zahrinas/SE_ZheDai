@@ -1,0 +1,50 @@
+<!--pages/put_order_J1/put_order_J1.wxml-->
+<view class="container1" >
+  <view>校区</view>
+</view>
+
+<view class="container2">
+  <view>类型</view>
+</view>
+
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label class="weui-label">时间限制：</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="请输入时间限制" bindinput="time" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label class="weui-label">报酬：</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="请输入报酬" bindinput="reward" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label class="weui-label">备注：</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="请输入备注" bindinput="comment" />
+      </view>
+    </view>
+    <button class="weui-btn weui-btn_primary" id="change" bindtap="sendOrder">发布</button>
+  </form>
+</view>
+
+<scroll-view scroll-y class="selectSchool" scroll-with-animation >
+  <view class="school" wx:for="{{schoolList}}" wx:key="id" bindtap="tabSchool" data-id="{{index}}">
+    <view class="schoolText {{index==schoolCur?'schoolOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y class="selectType" scroll-with-animation >
+  <view class="type" wx:for="{{typeList}}" wx:key="id" bindtap="tabType" data-id="{{index}}">
+    <view class="typeText {{index==typeCur?'typeOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>

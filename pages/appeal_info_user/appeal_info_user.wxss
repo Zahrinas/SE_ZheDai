@@ -1,0 +1,58 @@
+/* pages/appeal_info_user/appeal_info_user.wxss */
+.container {
+  padding: 20rpx;
+  }
+  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  gap: 80rpx;
+  }
+  
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  }
+  
+.nickname {
+  font-size: 32rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+  }
+  
+.reason {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #f2f2f2;
+  width: 90%;
+  text-align: justify;
+  line-height: 1.5em;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  }
+  
+.appeal-status {
+  font-size: 32rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  background-color: #f2f2f2;
+  width: 90%;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  }

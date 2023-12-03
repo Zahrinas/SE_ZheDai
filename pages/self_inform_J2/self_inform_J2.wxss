@@ -1,0 +1,20 @@
+/* pages/self_inform_J2/self_inform_J2.wxss */
+image {
+  height: 100px;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weui-form-preview__label {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.weui-form-preview__value{
+  display: inline-block;
+  white-space: nowrap;
+}

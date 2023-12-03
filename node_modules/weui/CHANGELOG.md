@@ -1,0 +1,622 @@
+### v2.5.16 (2023-01-16)
+
+#### Features
+* feat: 升级picker样式
+* feat: 升级loading样式
+
+#### Bugfixes
+* fix: 统一“正在加载”文案
+
+
+
+### v2.5.15 (2022-12-26)
+
+#### Features
+* feat: 加入色板less变量
+* feat: 色板新增红橙色
+
+#### Bugfixes
+* fix: 弹窗标题缺少默认字体颜色
+* fix: weui-animate的keyframe名增加weui前缀
+
+
+
+### v2.5.14 (2022-09-16)
+
+#### Bugfixes
+* fix: 半屏组件的关闭图标兼容旧dom
+
+
+
+### v2.5.13 (2022-09-15)
+
+#### Bugfixes
+* fix: 修复ios16下text-align-last导致的问题
+
+
+
+### v2.5.12 (2022-09-06)
+
+#### Features
+* fix: 加入公安备案信息
+
+#### Bugfixes
+* fix: toast、toptips层级调整至5500
+
+
+
+### v2.5.11 (2022-08-16)
+
+#### Features
+* feat: 优化slide半屏、loadmore、button组件的实现
+* feat: 工信部网站信息备案
+
+
+#### Bugfixes
+* fix: 去掉弹窗适配无障碍focus时带系统默认聚焦样式
+* fix: 去掉分享签名api调用
+
+
+
+### v2.5.10 (2022-08-02)
+
+#### Features
+* feat: 半屏弹窗新增下拉类型
+* feat: uploader组件的上传图标大小从固定尺寸改为相对尺寸
+
+#### Bugfixes
+* fix: 优化半屏弹窗样式代码
+* fix: 升级h5 example的zepto版本至1.2.0
+
+
+
+### v2.5.9 (2022-06-16)
+
+#### Features
+* feat: 升级toast组件、article组件、msg组件UI
+* feat: 增加css变量注册容器`.wx-root`
+
+#### Bugfixes
+* fix: 修复flex布局
+
+
+
+### v2.5.8 (2022-05-27)
+
+#### Bugfixes
+* fix: 优化默认字体序列
+
+
+
+### v2.5.7 (2022-05-27)
+
+#### Bugfixes
+* fix: 默认字体名更新
+* fix: 按钮禁止长按
+
+
+
+### v2.5.6 (2022-04-06)
+
+#### Features
+* feat: 新增单选框、复选框、开关组件的置灰态
+
+#### Bugfixes
+* fix: 优化半屏弹窗按钮布局，保证向前兼容
+* fix: 修复steps组件缺少初始化状态问题、新增icon-prev状态
+* fix: 优化底部悬浮按钮间距实现方式
+* fix: 去掉无用的weui-cell_access背景颜色点击态实现
+* fix: 优化example体验
+
+
+
+### v2.5.5 (2022-03-03)
+
+#### Features
+* feat: 增加步骤条组件
+* feat: weui-link增加点击态
+
+#### Bugfixes
+* fix: 修复actionsheet头部上下安全距离
+* fix: 修复navbar无障碍选中提示
+* fix: 调整输入框清除按钮间距
+
+
+
+### v2.5.4 (2021-12-10)
+
+#### Bugfixes
+* fix: 修复若干UI细节问题
+* fix: 优化悬浮按钮、form、panel、cell、msg、select、switch、textarea、agree组件示例
+
+
+
+### v2.5.3 (2021-12-08)
+
+#### Features
+* feat: 升级form组件UI
+* feat: 升级switch组件UI
+* feat: 升级articleUI、新增列表类型
+* feat: cell组件新增副标题
+* feat: 半屏弹窗新增下拉关闭图标（见样式二）
+
+#### Bugfixes
+* fix: 修复表单weui-agree组件对齐问题
+
+
+
+### v2.5.2 (2021-11-29)
+
+#### Features
+* feat: 升级article组件UI
+* feat: 底部悬浮按钮、半屏弹窗按钮支持垂直布局
+* feat: 新增transition模态显示动画
+
+#### Bugfixes
+* fix: 表单组件验证码同意协议复选框优化无障碍体验
+* fix: 调整gallery组件底部安全间距、删除按钮增加点击态
+* fix: actionsheet组件适配刘海屏
+* fix: a11y热区去掉冗余背景声明
+* fix: 修复图标按钮整合
+* fix: 表单同意协议居中布局
+* fix: 提高weui icon组件的选择器权重，用来规避和weui-icon混搭使用的权重问题
+
+
+
+### v2.5.1 (2021-10-11)
+
+#### Features
+* feat: 新增关怀模式色板
+* feat: 半屏弹窗组件UI升级
+* feat: 升级按钮loading UI
+* feat: msg组件标题字重调整
+* feat: article新增无障碍整合焦点例子
+
+
+### v2.5.0 (2021-09-17)
+
+#### Features
+* feat: WeUI组件库适配无障碍
+* feat: WeUI组件库适配大字号
+* feat: 新增无障碍、热区工具类(见`/style/base/a11y.less`)
+* feat: 按钮组件UI升级：高度、圆角属性
+* feat: 新增底部悬浮按钮
+* feat: 统一各平台组件样式（涉及dialog、actionsheet）
+* feat: 构建支持Node.js 12+的环境
+
+#### Bugfixes
+* fix: msg组件extra-area新增水平间距
+* fix: 修复toast文字场景默认宽度问题
+
+
+
+
+### v2.4.4 (2021-03-23)
+
+#### Features
+* feat: 升级半屏弹窗组件UI
+* feat: 升级msg组件UI
+
+#### Bugfixes
+* fix: 修复半屏弹窗单个按钮的布局问题
+* fix: 修复actionsheet组件取消按钮字体颜色问题
+* fix: 调整上传组件边距
+
+
+
+### v2.4.3 (2021-02-01)
+
+#### Features
+* feat: 调整Loading组件UI
+* feat: Toast组件新增长文案场景、加载中场景升级UI
+* feat: 新增msg自定义区域，可加key-value、普通提示、cell等列表
+* feat: 表单状态新增当前位置报错场景
+* feat: 表单组件新增跳转列表项
+* feat: 新增链接点击态色值变量
+* feat: 更新License年份 & 提供rpx版本
+
+#### Bugfixes
+* fix: 修复Input组件placeholde字体颜色
+* fix: 修复rpx版本下的demo展示问题
+
+
+
+### v2.4.2 (2020-11-25)
+
+#### Bugfixes
+* fix: 回退version版本到2.4.1
+* fix: 把weui和weui-wxss的changelog对齐现网版本
+* fix: 修复picker组件darkmode下的背景色适配问题
+* fix: 修复toast组件的旧版loading图标大小
+* fix: 修复msg组件英文文本词间断行问题
+
+
+
+### v2.4.1 (2020-11-05)
+
+#### Features
+* feat: 升级toast组件的UI
+* feat: 新增圆圈loading组件
+* feat: 升级button组件的loading UI
+
+#### Bugfixes
+* fix: msg组件文本区域新增英文词间折行加破折号的效果
+
+
+### v2.4.0 (2020-06-17)
+
+#### Features
+* feat: 升级色板配色
+
+
+### v2.3.0 (2020-03-04)
+
+#### Features
+* feat: input的placeholder更改颜色
+* feat: 更改cell的点击态背景颜色
+
+#### Bugfixes
+* fix: msg的title没有适配黑暗模式
+* fix: input placeholder的样式
+* fix: fix default 按钮的点击态
+* fix: form表单的验证码样式
+* fix: darkmode右滑组件、修复图片预览组件刘海屏安全间距问题
+* fix: 搜索框的文本没有适配黑暗模式
+
+
+### [v2.2.0](https://github.com/Tencent/weui/compare/v2.1.4...v2.2.0) (2020-02-17)
+
+#### Features
+* feat: DarkMode 黑暗模式 适配。默认跟随系统，可在`body`添加属性`data-weui-theme`来控制，值为`light`/`dark`。([d2aa336](https://github.com/Tencent/weui/commit/d2aa336))
+* feat: 不再对`weui-btn_plain`进行支持，可使用`weui-btn`代替([699609f](https://github.com/Tencent/weui/commit/699609f))
+
+#### Bugfixes
+* fix: 在 iphone se 下，不能看到确认按钮的问题 #816([a2c83d3](https://github.com/Tencent/weui/commit/a2c83d3))
+
+#### Breaking Changes
+* feat: 不再对`weui-btn_plain`进行支持，可使用`weui-btn`代替([699609f](https://github.com/Tencent/weui/commit/699609f))
+
+
+
+### [v2.1.4](https://github.com/Tencent/weui/compare/v2.1.3...v2.1.4) (2020-01-20)
+
+#### Features
+* feat: 更改weui-cell点击态的实现方式，需要点击态额外加weui-cell_active扩展类([0aa806d](https://github.com/Tencent/weui/commit/0aa806d))
+
+#### Bugfixes
+* fix: 修复弹窗组件在ios10下内容区域无法局部滚动的问题([9fe8971](https://github.com/Tencent/weui/commit/9fe8971))
+* fix: 修复文本域计数器对齐问题([587c35c](https://github.com/Tencent/weui/commit/587c35c))
+* fix: 修复图片预览组件在刘海屏下安全间距的问题以及多个文字颜色问题([f923afb](https://github.com/Tencent/weui/commit/f923afb))
+* fix: 优化footer组件固定底部在刘海屏上的体验([1034346](https://github.com/Tencent/weui/commit/1034346))
+* fix: 优化半屏弹窗的头部图标，使背景透明化，weui-icon-btn_close更名为weui-icon-close-thin，weui-icon-btn_more更名为weui-icon-more，weui-icon-btn_goback更名为weui-icon-back-arrow-thin([0c2c0c1](https://github.com/Tencent/weui/commit/0c2c0c1))
+* fix: 修复半屏弹窗非刘海屏下的布局问题([ae86a50](https://github.com/Tencent/weui/commit/ae86a50))
+* fix: 修复新表单底部提示区域链接颜色([ddf0a89](https://github.com/Tencent/weui/commit/ddf0a89))
+* fix: 修复weui-cell_access在新表单下的字体颜色被覆盖的问题([a993864](https://github.com/Tencent/weui/commit/a993864))
+* fix: 去掉同意协议ios默认点击态([3863da6](https://github.com/Tencent/weui/commit/3863da6))
+
+#### Breaking Changes
+* fix: 更新表单下默认链接字体颜色，去掉了weui-form的超链接默认色值。若需要使用原链接色，可对超链接加扩展类weui-link([a993864](https://github.com/Tencent/weui/commit/a993864))
+* fix: weui-cells下方提示增加超链接默认颜色([5d22c51](https://github.com/Tencent/weui/commit/6344135abcddf77ff93c5ac31f35d9e3c5d22c51))
+
+
+
+
+### [v2.1.3](https://github.com/Tencent/weui/compare/v2.1.2...v2.1.3) (2019-09-18)
+
+#### Style
+* style: 修复form场景下uploader布局兼容问题([6eba009](https://github.com/Tencent/weui/commit/6eba009))
+
+
+
+### [v2.1.2](https://github.com/Tencent/weui/compare/v2.1.1...v2.1.2) (2019-09-17)
+
+#### Features
+* feat: 增加模拟选择框([3d081fd](https://github.com/Tencent/weui/commit/3d081fd))
+* feat: 升级表单UI，新增form页面模板，cell新增`weui-cells__group`结构，加扩展`weui-cells__group_form`可显示表单新皮肤([59ac11f](https://github.com/Tencent/weui/commit/59ac11f))
+
+#### Style
+* style: 对固定底部的footer增加刘海屏安全区域([816a631](https://github.com/Tencent/weui/commit/816a631))
+* style: 更正表单cell的点击态场景([eafb43e](https://github.com/Tencent/weui/commit/eafb43e))
+* style: 更新表单demo样式([ba4e192](https://github.com/Tencent/weui/commit/ba4e192))
+* style: 优化switch UI([0206f0c](https://github.com/Tencent/weui/commit/0206f0c))
+* style: 增加agree未勾选时的提示动画([33af94c](https://github.com/Tencent/weui/commit/33af94c))
+* style: 优化actionsheet UI([d5b369c](https://github.com/Tencent/weui/commit/d5b369c))
+* style: icon实现从字体图标平滑升级为SVG([717b46a](https://github.com/Tencent/weui/commit/717b46a))
+* style: 优化toast UI，布局改为`flex`，toast方块宽高单位改成`px`，不再相对当前字号([5a0bee8](https://github.com/Tencent/weui/commit/5a0bee8))
+* style: 优化弹窗 UI，自适应规则调整：与屏幕左右各留16px的安全距离，宽度自适应，最大值为320px([0c3b3e5](https://github.com/Tencent/weui/commit/0c3b3e5))
+* style: 优化半屏组件UI([5dcca15](https://github.com/Tencent/weui/commit/5dcca15))
+
+
+
+### [v2.0.1](https://github.com/Tencent/weui/compare/v2.0.0...v2.0.1) (2019-07-15)
+
+#### Features
+* feat: 增加组件 半屏弹窗half-screen-dialog([a5e994b](https://github.com/Tencent/weui/commit/a5e994b))
+
+#### Style
+* style: 更新Picker UI
+
+
+
+#### v2.0.0 (2019-04-30)
+
+- 【增强】 颜色规范、字体大小规范、间距规范对齐微信7.0新视觉风格
+- 【增强】 更新按钮UI
+- 【增强】 按钮改为默认定宽`184px`，需要用回拉通型可加class`weui-btn_block`
+- 【增强】 新增行按钮UI
+- 【增强】 更新图标UI
+- 【优化】 weui-msg布局改为`flex`，并适配刘海屏
+- 【增强】 weui-msg新增提示区域`weui-msg__tips-area`
+- 【增强】 weui-msg新增无图标展示场景
+- 【增强】 更新weui-search-bar UI
+- 【优化】 weui-tab布局改为`flex`，并适配刘海屏
+- 【增强】 更新weui-dialog UI
+- 【增强】 更新weui-cell UI
+- 【增强】 更新weui-uploader UI
+- 【修复】 weui-vcode-btn左边框无高清线处理
+- 【修复】 无weui-cells__title的相邻weui-cells之间的间距太大
+- 【修复】 WeUI example、weui-article、weui-gallery、weui-actionshet、weui-picker等组件刘海屏适配问题
+
+
+#### v1.1.3 (2018-06-28)
+
+- 【增强】 weui-msg的extra-area适配iphoneX
+- 【修复】 调整字体大小后，搜索框的icon没有居中 #606
+- 【修复】 weui-msg的title和desc是英文的时候没有换行的问题
+
+
+#### v1.1.2 (2017-04-18)
+
+- 【增强】 cell增加向左滑动出现按钮的场景 #559
+- 【增强】 cell的高度改为45px
+- 【增强】 actionsheet增加title及其样式优化
+- 【增强】 readme的英文版
+- 【优化】 form-preview的语义化问题 #602
+- 【优化】 loading的svg放到同一个文件，以压缩代码
+- 【修复】 input没有 / 结束 #598
+- 【修复】 picker在字号变化时导致的错位现象及其样式优化
+
+
+#### v1.1.1 (2017-01-17)
+
+- 【修复】 fix icon-safe的错乱问题
+- 【增强】 增加按钮loading状态
+- 【增强】 更新普通警告图标颜色
+
+
+
+#### v1.1.0 (2016-11-21)
+
+- 【增强】 新增兼容IE Edge版本的switch
+- 【增强】 增加组件 badge徽章
+- 【增强】 增加组件 slider滑块
+- 【增强】 增加组件 picker多列选择器
+- 【优化】 把radio和checkbox下的weui-cell的:active挪到weui-check__label
+- 【优化】 src/navbar.less 更名为 src/weui-navbar.less
+- 【优化】 src/tabbar.less 更名为 src/weui-tabbar.less
+- 【优化】 loading的base64
+- 【优化】 去掉废弃和冗余的样式
+- 【修复】 preview下，两个button并排时，高度有问题 (#462)
+- 【修复】 button作为.weui-vcode-btn时的样式问题 (#519)
+- 【修复】 sourcemap 为乱码的问题
+- 【修复】 select的箭头没有居中的问题
+- 【修复】 tabbar的间距样式
+
+
+
+#### v1.0.2 (2016-09-27)
+
+- 【修复】 fix 不见了的weui-icon_clear的icon: weui-icon_close -> weui-icon_clear
+- 【修复】 preview在没有value的时候会变形: 增加weui-form-preview__item来控制
+- 【修复】 补上九宫格Grid的DEMO
+- 【修复】 九宫格文字换行问题 #483
+- 【优化】 icon的实现
+- 【优化】 example代码
+
+
+#### v1.0.1 (2016-09-27)
+
+- 【修复】 preview中，button与a标签的样式不一致
+- 【修复】 把遗漏的weui-media 更名为 weui-media-box
+
+
+#### v1.0.0 (2016-09-23)
+
+- 【增强】 采用BEM命名规范
+- 【增强】 新增Flex布局
+- 【增强】 新增Gallery
+- 【增强】 新增Preview
+- 【增强】 新增Agreement
+- 【增强】 新增Footer
+- 【增强】 新增Dialog和Actionsheet的Android样式
+- 【修复】 修正了部分组件的间距
+- 【修复】 修复了已知问题
+
+
+#### v0.4.3 (2016-07-05)
+
+- 【修复】 图片上传组件无法选中图片的缺陷
+- 【修复】 九宫格组件少于3个时出现多余线段的缺陷
+- 【修复】 解决某些组件的z-index冲突，标准化z-index
+- 【修复】 解决`pannel`图标没有对齐的问题
+- 【增强】 demo 更新 router
+- 【增强】 autoprefixer 指定浏览器范围
+
+详情参考:
+
+- [60873c2](https://github.com/weui/weui/commit/60873c2) fix 某些android机不能选图片的bug (issues#388)
+- [46235c6](https://github.com/weui/weui/commit/46235c6) #376 Fix grids top line bug with less than 2 item
+- [715de0e](https://github.com/weui/weui/commit/715de0e) standard weui zindex (#415)
+- [07187f8](https://github.com/weui/weui/commit/07187f8) verticle mediabox appmsg thumb
+- [4c566dd](https://github.com/weui/weui/commit/4c566dd) #401 update demo router
+- [d8b504d](https://github.com/weui/weui/commit/d8b504d) #401 指定 autoprefixer 浏览器范围
+
+#### v0.4.2 (2016-04-28)
+
+- 【修复】 修复 `weui_label` 在英文字符下溢出的缺陷
+- 【增强】 Article 页面增加支持图片样式
+- 【修复】 demo 页面的 `lang` 属性修改
+- 【修复】 修复 demo 页面的 ActionSheet mask 无动画的缺陷
+- 【增强】 优化 demo, 为tab中navbar和tabbar里标签添加点击事件交互，方便查看实际效果
+- 【修复】 修改 `weui_label` 的宽度为 105px
+
+详情参考:
+
+- [8515ba3](https://github.com/weui/weui/commit/8515ba3) word wrap weui label (#341)
+- [b37830b](https://github.com/weui/weui/commit/b37830b) add article img
+- [9ad4230](https://github.com/weui/weui/commit/9ad4230) 调整 html 的 lang 属性
+- [775502c](https://github.com/weui/weui/commit/775502c) fix mask no transition bug (#333)
+- [3a6eaf7](https://github.com/weui/weui/commit/3a6eaf7) 优化demo 为tab中navbar和tabbar里标签添加点击事件交互，方便查看实际效果
+- [14ee030](https://github.com/weui/weui/commit/14ee030) standard weui select gap
+
+#### v0.4.1 (2016-04-06)
+
+- 【修复】优化 demo，修复 demo 的若干 bug
+- 【修复】修复搜索框上下边框位置的 bug
+- 【修复】改进 navbar 高亮背景色过浅的问题
+- 【修复】修复 navbar 在 iOS 下无法点击的 bug
+- 【修复】禁用 cssnano 插件压缩 css 时对 z-index 的转换，是 mask、toast、dialog 等有预设的 z-index
+- 【修复】修复弹框内容在英文字符时溢出的 bug
+- 【修复】修复 media-box 布局的 bug
+- 【修复】修复 tab demo 页面出现滚动条的 bug
+
+详情参考:
+
+- [22ba680](https://github.com/weui/weui/commit/22ba680) 优化 demo
+- [169e18a](https://github.com/weui/weui/commit/169e18a) fixed `search bar` border-top & border-bottom position bug
+- [7db3ca0](https://github.com/weui/weui/commit/7db3ca0) #295 fixed navbar active background-color
+- [1a549ea](https://github.com/weui/weui/commit/1a549ea) improve navbar touched behavior on ios
+- [6c1d7b5](https://github.com/weui/weui/commit/6c1d7b5) disable cssnano zindex
+- [e32dc1a](https://github.com/weui/weui/commit/e32dc1a) add dialog content word wrap
+- [b93306b](https://github.com/weui/weui/commit/b93306b) fix flexbox layout problem
+- [2260e49](https://github.com/weui/weui/commit/2260e49) #244 修复 tab demo 页出滚动条的bug
+
+#### v0.4.0 (2016-02-26)
+
+- 【增强】新增 navbar 组件
+- 【增强】新增 tabbar 组件
+- 【增强】新增 panel 组件
+- 【增强】新增 search_bar 组件
+- 【修复】#193 字体格式的问题，只使用 ttf 格式文件
+- 【增强】增加 `weui_icon_clear` 图标
+- 【修复】去掉表单元素 input 、textarea 点击时的默认的阴影
+- 【修复】修复 radio 图标没有完全居中的问题
+
+详情参考：
+- [3eda74a](https://github.com/weui/weui/commit/3eda74a) init navbar
+- [2567ad9](https://github.com/weui/weui/commit/2567ad9) init tabbar
+- [61ce366](https://github.com/weui/weui/commit/61ce366) rename card to panel
+- [f081257](https://github.com/weui/weui/commit/f081257) add searchbar
+- [affb271](https://github.com/weui/weui/commit/affb271) #193 fix font-face type
+- [4a3762c](https://github.com/weui/weui/commit/4a3762c) add `weui_icon_clear`
+- [491150b](https://github.com/weui/weui/commit/491150b) 去掉weui_cells_form的input textareat label[for]的点击阴影
+- [370acc2](https://github.com/weui/weui/commit/370acc2) update radio icon position, remove unused property
+
+#### v0.3.0 (2016-01-22)
+
+- 【增强】#149 添加 `bower.json` 描述文件
+- 【增强】增加图片上传（weui_uploader）组件
+- 【增强】增加九宫格（grid）组件
+
+详情参考：
+
+- [4d8aeb5](https://github.com/weui/weui/commit/4d8aeb5) #149 add bower.json file
+- [fe9d34f](https://github.com/weui/weui/commit/fe9d34f) add weui_uploader
+- [d7a63bd](https://github.com/weui/weui/commit/d7a63bd) create `weui_grid`
+
+#### v0.2.3 (2015-12-29)
+
+- 【修复】#134 修复iOS平台下跳转新页面，返回时Cell出现黑边的bug
+- 【增强】新增搜索框（放大镜）图标 `.weui_icon_search`
+- 【增强】文本域（textarea）添加计数器（.weui_textarea_counter）
+- 【修复】警告弹框内容居中，普通弹框内容居左
+- 【修复】移除没有使用的类
+- 【增强】#118 弹框按钮增加 active 态
+- 【修复】修改`.weui_cells_access` 底部间距
+- 【修复】`.weui_cells_tips` 内容居左
+
+详情参考：
+
+- [e08b9f6](https://github.com/weui/weui/commit/e08b9f6) #134 修复iOS平台下跳转新页面，返回时`Cell`出现黑边的bug
+- [dad33d7](https://github.com/weui/weui/commit/dad33d7) add `weui_icon_search`
+- [306e35f](https://github.com/weui/weui/commit/306e35f) add weui_textarea_counter
+- [133800f](https://github.com/weui/weui/commit/133800f) weui_dialog align content
+- [521807c](https://github.com/weui/weui/commit/521807c) fix textarea在weui_cell_warn下没有变色
+- [9868278](https://github.com/weui/weui/commit/9868278) remove no use class name
+- [7bd198b](https://github.com/weui/weui/commit/7bd198b) remove no use style
+- [9b59aa4](https://github.com/weui/weui/commit/9b59aa4) #118 add `weui_dialog` button's active color
+- [b480fb6](https://github.com/weui/weui/commit/b480fb6) weui_cells_access ft gap
+- [6d65cc7](https://github.com/weui/weui/commit/6d65cc7) add header while output css
+- [830eabe](https://github.com/weui/weui/commit/830eabe) `weui_cells_tips` align left
+
+#### v0.2.2 (2015-11-30)
+
+- 【修复】移出不必要的代码
+- 【增强】移除 `.weui_check_label` 的 `display: block`属性
+- 【增强】`.weui_dialog_ft` 从 `float` 改为 `flex`
+- 【增强】`Cell` 实现，从 `table-cell` 改为 `flex`
+- 【修复】#86 修复某些机型下字体图标无法显示的bug
+- 【修复】`.weui_progress_cancel` 重命名为 `.weui_progress_opr`
+
+详情参考：
+
+- [5de42e3](https://github.com/weui/weui/commit/5de42e3) remove no use style
+- [089725d](https://github.com/weui/weui/commit/089725d) remove `.weui_check_label` display: block because of `flex`
+- [c0549ff](https://github.com/weui/weui/commit/c0549ff) weui_dialog_ft: `float` to `flex`
+- [88afd9f](https://github.com/weui/weui/commit/88afd9f) `table-cell` to `flex`
+- [4492533](https://github.com/weui/weui/commit/4492533) #86 修复某些机型下字体图标无法显示的bug
+- [092ab48](https://github.com/weui/weui/commit/092ab48) rename `weui_progress_cancel` to `weui_progress_opr`
+
+#### v0.2.1 （2015-11-11）
+
+- 【修复】移除 step list 代码
+- 【修复】去掉 Msg 的头
+- 【修复】修改 input 的行高
+- 【修复】#60 修复iOS下input[type=date]失效的bug
+- 【修复】修改 Cells Title 字号为 14px
+- 【增强】增加 ActionSheet 组件
+- 【增强】增加取消图标`.weui_icon_cancel`
+- 【增强】增加 info 图标 `.weui_icon_info_circle`
+- 【增强】增加进度条（Progress）组件
+- 【增强】增加开关（switch）组件
+
+详情参考：
+
+- [7a166d8](https://github.com/weui/weui/commit/7a166d8) remove weui_step_list.less
+- [ec8f4e7](https://github.com/weui/weui/commit/ec8f4e7) 统一样式风格，提高可读性
+- [c9a459f](https://github.com/weui/weui/commit/c9a459f) 去掉Msg的头
+- [b62c24a](https://github.com/weui/weui/commit/b62c24a) 样式优化
+- [f636d50](https://github.com/weui/weui/commit/f636d50) fix weui input line-height
+- [c3508d9](https://github.com/weui/weui/commit/c3508d9) #60 修复iOS下input[type=date]失效的bug
+- [ba95914](https://github.com/weui/weui/commit/ba95914) `cell title` set to 14px
+- [ea613c1](https://github.com/weui/weui/commit/ea613c1) add action sheet
+- [e9cc680](https://github.com/weui/weui/commit/e9cc680) add `weui_icon_cancel`
+- [f8d22d5](https://github.com/weui/weui/commit/f8d22d5) add `weui_icon_info_circle` icon
+- [0df897c](https://github.com/weui/weui/commit/0df897c) add `weui_progress` widget
+- [bbb219c](https://github.com/weui/weui/commit/bbb219c) add weui_switch.less
+
+#### v0.2.0 （2015-10-27）
+
+- 【修复】按钮组中间的间距从 10px 改为 15px
+- 【修复】修复镂空按钮 active 态的问题
+- 【修复】表单下面没有按钮时，去掉 margin-top
+- 【修复】Cells 没有 title 时，增加 margin-top
+- 【修复】删除不必要的代码
+- 【修复】修复表单、验证码的bug
+
+详情参考：
+
+- [4e25528](https://github.com/weui/weui/commit/4e25528) fix 按钮间的间距10px -> 15px
+- [302c8a8](https://github.com/weui/weui/commit/302c8a8) fix 当在button标签上应用.weui_btn_plain_primary的时候，会出现背景色灰色填充，并且由于样式优先级的问题，在…
+- [15605c8](https://github.com/weui/weui/commit/15605c8) add 在weui_cells_form下的weui_btn_area会有默认的margin-top
+- [4bd0b01](https://github.com/weui/weui/commit/4bd0b01) fix cells没有title的时候缺乏margin-top
+- [98d073f](https://github.com/weui/weui/commit/98d073f) del lab widget
+- [97ffc47](https://github.com/weui/weui/commit/97ffc47) weui_button layout
+- [59d8fd5](https://github.com/weui/weui/commit/59d8fd5) fix weui_select arrow align & weui_msg gap & weui_vcode align
+- [f8f31aa](https://github.com/weui/weui/commit/f8f31aa) rename rename weui_dialog button
+
+#### v0.1.0 (2015-09-07)
+
+初始发布
+
+- Initial release

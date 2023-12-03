@@ -1,0 +1,27 @@
+<!--pages/receive_order_s1/receive_order_s1.wxml-->
+<scroll-view scroll-x class="selectSchool" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="school" wx:for="{{schoolList}}" wx:key="id" bindtap="tabSchool" data-id="{{index}}">
+    <view class="schoolText {{index==schoolCur?'schoolOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-x class="selectType" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="type" wx:for="{{typeList}}" wx:key="id" bindtap="tabType" data-id="{{index}}">
+    <view class="typeText {{index==typeCur?'typeOn':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+
+<view class="order-list">
+  <view class="weui-cells weui-cells_access">
+    <navigator url="/pages/receive_order_s2/receive_order_s2?id={{item.id}}" wx:for="{{orderList}}" wx:key="id" class="weui-cell" hover-class="weui-cell_active">
+      <image class="weui-cell__hd" mode="aspectFill" src="{{item.posterHeadImg}}"></image>
+      <view class="weui-cell__bd">
+        <view class="order-school">{{item.school}}</view>
+        <view class="order-type">{{item.type}}</view>
+        <view class="order-time">{{item.time}}</view>
+      </view>
+      <view class="weui-cell__ft"></view>
+    </navigator>
+  </view>
+</view>
+

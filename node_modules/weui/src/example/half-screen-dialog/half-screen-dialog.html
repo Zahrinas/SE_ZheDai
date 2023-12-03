@@ -1,0 +1,352 @@
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">Half-screen Dialog</h1>
+        <p class="page__desc">半屏组件</p>
+    </div>
+    <div class="page__bd page__bd_spacing">
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog1">样式一</a>
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog2">样式二</a>
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog3">样式三</a>
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog4">样式四</a>
+        <a href="javascript:" role="button" class="weui-btn weui-btn_default" id="showDialog5">样式五</a>
+    </div>
+
+    <div id="dialogs">
+        <div id="dialogWrap1" class="js_dialog_wrap" ref="showDialog1" aria-labelledby="js_title1" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div id="mask1" class="js_close weui-mask"></div>
+            <div id="js_dialog_1" class="js_dialog weui-half-screen-dialog">
+                <div class="weui-half-screen-dialog__hd">
+                  <div class="weui-half-screen-dialog__hd__side">
+                    <button class="js_close weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></button>
+                  </div>
+                  <div class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title" id="js_title1">标题</strong>
+                    <span class="weui-half-screen-dialog__subtitle">副标题</span>
+                  </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd">
+                  <br>
+                  <br>
+                  可放自定义内容
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+            </div>
+        </div>
+        <div id="dialogWrap2" class="js_dialog_wrap" ref="showDialog2" aria-labelledby="js_title2" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div id="mask2" class="js_close weui-mask"></div>
+            <div id="js_dialog_2" class="js_dialog weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed">
+              <div class="weui-half-screen-dialog__hd">
+                <div class="weui-half-screen-dialog__hd__side">
+                  <button class="js_close weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-slide-down"></i></button>
+                  <button style="display: none;" class="weui-btn_icon weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></button>
+                  <button style="display: none;" class="js_close weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></button>
+                </div>
+                <div class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title" id="js_title2">标题</strong>
+                </div>
+                <div class="weui-half-screen-dialog__hd__side">
+                  <button class="weui-btn_icon weui-wa-hotarea">更多<i class="weui-icon-more"></i></button>
+                </div>
+              </div>
+              <div class="weui-half-screen-dialog__bd">
+                <div class="weui-bottom-fixed-opr-page" id="js_wrap_wrp">
+                  <div class="weui-bottom-fixed-opr-page__content" id="js_wrap_content">
+                    <p class="weui-half-screen-dialog__desc">
+                    辅助描述内容，可根据实际需要安排
+                    </p>
+                    <p class="weui-half-screen-dialog__tips" role="option">
+                    辅助提示内容，可根据实际需要安排
+                    Dolor adipisci quidem consequuntur similique consequuntur doloribus modi possimus sunt voluptas qui Aspernatur natus error quisquam quidem ipsa corrupti! Dignissimos quasi quis natus fugiat odio in? Mollitia molestias error earum.
+                    Dolor adipisci quidem consequuntur similique consequuntur doloribus modi possimus sunt voluptas qui Aspernatur natus error quisquam quidem ipsa corrupti! Dignissimos quasi quis natus fugiat odio in? Mollitia molestias error earum.
+                    Dolor adipisci quidem consequuntur similique consequuntur doloribus modi possimus sunt voluptas qui Aspernatur natus error quisquam quidem ipsa corrupti! Dignissimos quasi quis natus fugiat odio in? Mollitia molestias error earum.
+                    Dolor adipisci quidem consequuntur similique consequuntur doloribus modi possimus sunt voluptas qui Aspernatur natus error quisquam quidem ipsa corrupti! Dignissimos quasi quis natus fugiat odio in? Mollitia molestias error earum.
+                    Dolor adipisci quidem consequuntur similique consequuntur doloribus modi possimus sunt voluptas qui Aspernatur natus error quisquam quidem ipsa corrupti! Dignissimos quasi quis natus fugiat odio in? Mollitia molestias error earum.
+                    </p>
+                  </div>
+                  <div class="weui-bottom-fixed-opr">
+                    <a href="javascript:;" role="button" id="js_wrap_btn" class="js_close weui-btn weui-btn_primary">同意并完成</a>
+                    <a href="javascript:;" role="button" class="js_close weui-btn weui-btn_default">取消</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="dialogWrap3" class="js_dialog_wrap" ref="showDialog3" aria-label="弹窗标题" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div aria-label="关闭" role="button" class="js_close weui-mask"></div>
+            <div id="js_dialog_3" class="js_dialog weui-half-screen-dialog weui-half-screen-dialog_large">
+                <div class="weui-half-screen-dialog__hd">
+                  <div class="weui-half-screen-dialog__hd__main">
+                    <div class="weui-flex" style="align-items: center; font-size: 14px;">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width: 24px; margin-right: 8px; border-radius: 50%; display: block;">
+                      昵称
+                    </div>
+                  </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd">
+                  <br>
+                  可放自定义内容
+                  <br>
+                </div>
+                <div class="weui-half-screen-dialog__ft">
+                  <div class="weui-half-screen-dialog__btn-area">
+                    <a href="javascript:" class="js_close weui-btn weui-btn_default">次要操作</a>
+                    <a href="javascript:" class="js_close weui-btn weui-btn_primary">主要操作</a>
+                  </div>
+                  <div class="weui-half-screen-dialog__attachment-area">
+                    <a class="weui-link" href="javacript:;">附加操作</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="dialogWrap4" class="js_dialog_wrap" ref="showDialog4" aria-label="弹窗标题" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div aria-label="关闭" role="button" class="js_close weui-mask"></div>
+            <div id="js_dialog_4" class="js_dialog weui-half-screen-dialog">
+                <div class="weui-half-screen-dialog__hd">
+                  <div class="weui-half-screen-dialog__hd__main">
+                    <div class="weui-flex" style="align-items: center; font-size: 14px;">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width: 24px; margin-right: 8px; border-radius: 50%; display: block;">
+                      昵称
+                    </div>
+                  </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd">
+                  <br>
+                  可放自定义内容
+                  <br>
+                </div>
+                <div class="weui-half-screen-dialog__ft">
+                  <div id="js_wrap_btn_area" class="weui-half-screen-dialog__btn-area">
+                    <a id="js_wrap_btn_1" href="javascript:" class="js_close weui-btn weui-btn_default">非主要操作</a>
+                    <a href="javascript:" class="js_close weui-btn weui-btn_primary">主要操作</a>
+                  </div>
+                  <div class="weui-half-screen-dialog__attachment-area">
+                    <a class="weui-link" href="javacript:;">附加操作</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="dialogWrap5" class="js_dialog_wrap" ref="showDialog5" aria-labelledby="js_title5" role="dialog" aria-modal="false" aria-hidden="true" style="display: none;">
+            <div id="js_close" class="js_close weui-mask"></div>
+            <div id="js_dialog_5" class="js_dialog weui-half-screen-dialog weui-half-screen-dialog_slide">
+                <div class="weui-half-screen-dialog__hd">
+                  <div id="js_line" class="weui-half-screen-dialog__slide-icon">
+                    <i id="js_arrow" class="weui-icon-arrow"></i>
+                  </div>
+                </div>
+                <div class="weui-half-screen-dialog__bd">
+                  <br>
+                  <br>
+                  可放自定义内容
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        const $dialog1 = $('#js_dialog_1');
+        const $dialog2 = $('#js_dialog_2');
+        const $dialog3 = $('#js_dialog_3');
+        const $dialog4 = $('#js_dialog_4');
+        const $dialog5 = $('#js_dialog_5');
+        const $dialogWrap1 = $('#dialogWrap1');
+        const $dialogWrap2 = $('#dialogWrap2');
+        const $dialogWrap3 = $('#dialogWrap3');
+        const $dialogWrap4 = $('#dialogWrap4');
+        const $dialogWrap5 = $('#dialogWrap5');
+
+        function closeDialog(o){
+          const $jsDialogWrap = o.parents('.js_dialog_wrap');
+          $jsDialogWrap.attr('aria-hidden','true').attr('aria-modal','false').removeAttr('tabindex');
+          $jsDialogWrap.fadeOut(300);
+          $jsDialogWrap.find('.js_dialog').removeClass('weui-half-screen-dialog_show');
+          setTimeout(function(){
+            $('#' + $jsDialogWrap.attr('ref')).trigger('focus');
+          }, 300);
+        }
+
+        $('.js_dialog_wrap').on('touchmove', function(e) {
+            if($.contains(document.getElementById('js_wrap_content'), e.target)){
+            } else {
+              e.preventDefault();
+            }
+        });
+
+        $('.js_close').on('click', function() {
+          closeDialog($(this));
+        });
+
+
+
+        $('#showDialog1').on('click', function(){
+            $dialogWrap1.fadeIn(200);
+            $dialog1.addClass('weui-half-screen-dialog_show');
+            setTimeout(function(){
+              $dialogWrap1.attr('aria-hidden','false');
+              $dialogWrap1.attr('aria-modal','true');
+              $dialogWrap1.attr('tabindex','0');
+              $dialogWrap1.trigger('focus');
+            },200)
+        });
+        $('#showDialog2').on('click', function(){
+            $dialogWrap2.fadeIn(200);
+            $dialog2.addClass('weui-half-screen-dialog_show');
+            wrapPage.style.visibility = 'hidden';
+            setTimeout(function(){
+              if(wrapBtn.offsetHeight > 48){
+                wrapPage.classList.add('weui-bottom-fixed-opr-page_btn-wrap');
+              }
+              wrapPage.style.visibility = 'visible';
+            },100);
+            setTimeout(function(){
+              $dialogWrap2.attr('aria-hidden','false');
+              $dialogWrap2.attr('aria-modal','true');
+              $dialogWrap2.attr('tabindex','0');
+              $dialogWrap2.trigger('focus');
+            },200)
+        });
+        $('#showDialog3').on('click', function(){
+            $dialogWrap3.attr('aria-hidden','false');
+            $dialogWrap3.attr('aria-modal','true');
+            $dialogWrap3.attr('tabindex','0');
+            $dialogWrap3.fadeIn(200);
+            $dialog3.addClass('weui-half-screen-dialog_show');
+            setTimeout(function(){
+              $dialogWrap3.trigger('focus');
+            },200)
+        });
+        $('#showDialog4').on('click', function(){
+            $dialogWrap4.attr('aria-hidden','false');
+            $dialogWrap4.attr('aria-modal','true');
+            $dialogWrap4.attr('tabindex','0');
+            $dialogWrap4.fadeIn(200);
+            $dialog4.addClass('weui-half-screen-dialog_show');
+            wrapArea.style.visibility = 'hidden';
+            setTimeout(function(){
+              if(wrapBtn1.offsetHeight > 48){
+                $dialog4.addClass('weui-half-screen-dialog_btn-wrap');
+              }
+              wrapArea.style.visibility = 'visible';
+            },100);
+            setTimeout(function(){
+              $dialogWrap4.trigger('focus');
+            },200)
+        });
+        $('#showDialog5').on('click', function(){
+            $dialogWrap5.fadeIn(200);
+            js_line.style.height = 4 + 'px';
+            js_line.style.borderRadius = 2 + 'px';
+            js_arrow.style.opacity = 0;
+            $dialog5.addClass('weui-half-screen-dialog_show');
+            $dialog5.css('transform','translate3d(0, 0, 0)');
+            setTimeout(function(){
+              $dialogWrap5.attr('aria-hidden','false');
+              $dialogWrap5.attr('aria-modal','true');
+              $dialogWrap5.attr('tabindex','0');
+              $dialogWrap5.trigger('focus');
+            },200)
+        });
+
+        $('#js_close').on('click', function(){
+          closeDialog($(this));
+          $dialog5.css('transform','translate3d(0, 100%, 0)');
+        });
+
+
+        var dialog_5 = document.getElementById('js_dialog_5');
+        var js_line = document.getElementById('js_line');
+        var js_arrow = document.getElementById('js_arrow');
+        var start = 0
+        var end = 0
+
+        dialog_5.addEventListener('touchstart', function (e) {
+          start = e.changedTouches[0].clientY;
+        })
+
+        dialog_5.addEventListener('touchmove', function (e) {
+          var move = e.changedTouches[0].clientY - start;
+          if(move > 0){
+              dialog_5.style.transform = 'translate3d(0, ' + move + 'px, 0)';
+
+              var percent = move / 56;
+              percent = percent > 1 ? 1 : percent;
+              js_line.style.height = 4 + (16 - 4) * percent + 'px';
+              js_line.style.borderRadius = 2 + (12 - 2) * percent + 'px';
+
+              if(percent >= 0.5){
+                var pear = (percent - 0.5) / 0.5;
+                js_arrow.style.opacity = pear;
+              }
+          } else {
+              dialog_5.style.transform = 'translate3d(0,0,0)';
+              js_line.style.height = 4 + 'px';
+              js_line.style.borderRadius = 2 + 'px';
+              js_arrow.style.opacity = 0;
+          }
+        })
+
+        dialog_5.addEventListener('touchend', function (e) {
+          var move = e.changedTouches[0].clientY - start;
+          end = move;
+          var max = 56;
+          dialog_5.style.transition = 'transform .3s';
+
+          if(end < max){
+              dialog_5.style.transform = 'translate3d(0,0,0)';
+              js_line.style.height = 4 + 'px';
+              js_line.style.borderRadius = 2 + 'px';
+              js_arrow.style.opacity = 0;
+              end = 0;
+          } else if(end >= max){
+            closeDialog($(this));
+            dialog_5.style.transform = 'translate3d(0,100%,0)';
+          }
+        })
+
+
+        const wrapBtn = document.getElementById('js_wrap_btn');
+        const wrapBtn1 = document.getElementById('js_wrap_btn_1');
+        const wrapPage = document.getElementById('js_wrap_wrp');
+        const wrapArea = document.getElementById('js_wrap_btn_area');
+
+        try {
+          document.body.style.webkitTextSizeAdjust = JSON.parse(window.__wxWebEnv.getEnv()).fontScale + '%';
+        } catch (e) {
+          console.warn(e);
+        }
+
+        function wxReady(callback) {
+          if (
+            typeof WeixinJSBridge === 'object' &&
+            typeof window.WeixinJSBridge.invoke === 'function'
+          ) {
+            callback()
+          } else {
+            document.addEventListener('WeixinJSBridgeReady', callback, false)
+          }
+        }
+        wxReady(function() {
+          WeixinJSBridge.on('menu:setfont', function(res){
+            document.body.style.webkitTextSizeAdjust = res.fontScale + '%';
+            if(wrapBtn.offsetHeight > 48){
+              wrapPage.classList.add('weui-bottom-fixed-opr-page_btn-wrap');
+            }else{
+              wrapPage.classList.remove('weui-bottom-fixed-opr-page_btn-wrap');
+            }
+            if(wrapBtn1.offsetHeight > 48){
+              $dialog4.addClass('weui-half-screen-dialog_btn-wrap');
+            }else{
+              $dialog4.removeClass('weui-half-screen-dialog_btn-wrap');
+            }
+          });
+        });
+
+    });
+</script>

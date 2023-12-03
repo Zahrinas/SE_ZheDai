@@ -1,0 +1,33 @@
+<view class="orderContainer">
+  <view class="order">
+    <navigator url="/pages/other_inform_J4/other_inform_J4?id={{orderList[0].posterId}}">
+      <view class="avatar">
+        <image class="img" mode="aspectFit" src="{{orderList[0].posterHeadImg}}"></image>
+      </view>
+    </navigator>
+    <view class="orderInfo">
+      <view class="posterId">发单人id：{{orderList[0].posterId}}</view>
+      <view class="school">校区：{{orderList[0].school}}</view>
+      <view class="type">类型：{{orderList[0].type}}</view>
+    </view>
+    <view class="avatar rider-avatar" wx:if="{{riderHead}}">
+      <image class="img" mode="aspectFit" src="{{riderHead}}"></image>
+      <view class="rider-status">已接单</view>
+    </view>
+  </view>
+  <view class="orderDetails">
+    <view class="orderDetail">
+      <text class="label">截止时间：</text>
+      <text class="value">{{orderList[0].time}}</text>
+    </view>
+    <view class="orderDetail">
+      <text class="label">报酬：</text>
+      <text class="value">{{orderList[0].reward}}</text>
+    </view>
+    <view class="orderDetail">
+      <text class="label">备注：</text>
+      <text class="value">{{orderList[0].remark}}</text>
+    </view>
+  </view>
+  <button class="weui-btn button" bindtap="tab">{{button}}</button>
+</view>

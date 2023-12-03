@@ -1,0 +1,45 @@
+.complaintContainer {
+  height: 900rpx;
+  position: fixed;
+  left: 0;
+  top: 180rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.complaintList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.weui-panel {
+  margin-bottom: 10rpx;
+  width: 100%;
+}
+
+.weui-panel_access .weui-media-box__hd {
+  display: flex;
+}
+
+.weui-media-box__thumb {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  object-fit: cover;
+}
+
+
+.weui-media-box__bd {
+  flex: 1;
+}
+
+.weui-media-box__title {
+  font-size: 32rpx;
+  color: #fbbd08;
+}

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/receive_order_s1/receive_order_s1",
+    "pages/logs/logs",
+    "pages/receive_order_s3/receive_order_s3",
+    "pages/receive_order_s2/receive_order_s2",
+    "pages/msg_center_l1/msg_center_l1",
+    "pages/chat_list_l2/chat_list_l2",
+    "pages/chat_l3/chat_l3",
+    "pages/self_inform_J2/self_inform_J2",
+    "pages/put_order_J1/put_order_J1",
+    "pages/edit_inform_J3/edit_inform_J3",
+    "pages/other_inform_J4/other_inform_J4",
+    "pages/appeal_chat/appeal_chat",
+    "pages/appeal_info/appeal_info",
+    "pages/appeal_info_user/appeal_info_user",
+    "pages/edit_complaint/edit_complaint",
+    "pages/complaint_list/complaint_list_user",
+    "pages/complaint_list/complaint_list_admin"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "subPackages": [],
+  "requiredBackgroundModes": [
+    "userInfo"
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/receive_order_s1/receive_order_s1",
+        "iconPath": "static/img/receive.png",
+        "selectedIconPath": "static/img/receive_select.png",
+        "text": "接单"
+      },
+      {
+        "pagePath": "pages/put_order_J1/put_order_J1",
+        "iconPath": "static/img/post.png",
+        "selectedIconPath": "static/img/post_select.png",
+        "text": "发帖"
+      },
+      {
+        "pagePath": "pages/msg_center_l1/msg_center_l1",
+        "iconPath": "static/img/information.png",
+        "selectedIconPath": "static/img/information_select.png",
+        "text": "消息中心"
+      },
+      {
+        "pagePath": "pages/self_inform_J2/self_inform_J2",
+        "iconPath": "static/img/account.png",
+        "selectedIconPath": "static/img/account_select.png",
+        "text": "个人信息"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

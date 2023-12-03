@@ -1,0 +1,16 @@
+<!--pages/receive_order_s2/receive_order_s2.wxml-->
+<view class="orderContainer"   enable-flex="true" wx:key="id">
+  <view class="order">
+    <image class="img"style="height: 200rpx; width: 200rpx;" mode="aspectFit" src="{{orderList[0].posterHeadImg}}" bindtap="navigateToPage"></image>
+    <view class="orderInfo">
+      <view class="posterId">发单人id：{{orderList[0].posterId}}</view>
+      <view class="school">校区：{{orderList[0].school}}</view>
+      <view class="type" >类型：{{orderList[0].type}}</view>
+      <view class="time" >截止时间：{{orderList[0].time}}</view>
+      <view class="reward" >报酬：{{orderList[0].reward}}</view>
+      <view class="comment">备注：{{orderList[0].remark}}</view>
+    </view>
+    
+  </view>
+  <view class="button" bindtap="tab">接单</view>
+</view>

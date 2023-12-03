@@ -1,0 +1,77 @@
+CREATE TABLE orders (
+    id VARCHAR(256) PRIMARY KEY,
+    posterId VARCHAR(256),
+    posterHeadImg VARCHAR(256),
+    nickName VARCHAR(256),
+    riderId VARCHAR(256),
+    school VARCHAR(256),
+    type VARCHAR(256),
+    time VARCHAR(256),
+    reward VARCHAR(256),
+    remark VARCHAR(256)
+);
+
+INSERT INTO orders (id, posterId, posterHeadImg, nickname, riderId, school, type, time, reward, remark)
+VALUES
+    ('114514','114','../../imgs/exampleHeader.jpg',null,null,'紫荆港','取外卖','2023.4.8-23:59','微信打钱5毛钱','取件手机尾号1919'),
+    ('1919810','514','../../imgs/exampleHeader.jpg',null,null,'玉泉','充电','2023.4.8-23:59','微信打钱1元','接单之后微信私聊告诉你龟钥匙放哪里');
+
+CREATE TABLE chatlist (
+    sendId VARCHAR(256),
+    receiveId VARCHAR(256),
+    avatar VARCHAR(256),
+    nickname VARCHAR(256),
+    lastMsg VARCHAR(256),
+    time VARCHAR(256),
+    self VARCHAR(256)
+);
+
+INSERT INTO chatlist (id, sendId, receiveId, avatar, nickname, lastMsg, time,self)
+VALUES
+    ('φ','iejbeue','https://thirdwx.qlogo.cn/mmopen/vi_32/ksAfkNQgNClA9q3tiawgJybicDmLA0BQejz6pfdb4DWsYKYc5JYRCIiaMtOv6rwxnC1TksFGAfohgRs26H4icW1X6Q/132','jsa','在吗','2023-6-17-15-54','0');
+
+CREATE TABLE messagelist (
+    id VARCHAR(256) PRIMARY KEY,
+    sendId VARCHAR(256),
+    receiveId VARCHAR(256),
+    avatar VARCHAR(256),
+    nickname VARCHAR(256),
+    Msg VARCHAR(256),
+    time VARCHAR(256),
+    self VARCHAR(256)
+);
+
+INSERT INTO messagelist (id, sendId, receiveId, avatar, nickname, Msg, time,self)
+VALUES
+    ('1','iejbeue','φ','https://thirdwx.qlogo.cn/mmopen/vi_32/ksAfkNQgNClA9q3tiawgJybicDmLA0BQejz6pfdb4DWsYKYc5JYRCIiaMtOv6rwxnC1TksFGAfohgRs26H4icW1X6Q/132','jsa','在吗','2023-06-17 15-54-02','1');
+
+INSERT INTO messagelist (id, sendId, receiveId, avatar, nickname, Msg, time,self)
+VALUES
+    ('2','φ','iejbeue','https://thirdwx.qlogo.cn/mmopen/vi_32/SkDeQYvP2B8Dk6Eb0sRAlRuxfm5HEkE19JEzRFiadhmMn0XZYnFOCkr7aUw0IMLy8cW9z2icbhKfj6rLIya232zQ/132','jsa','你好','2023-06-17 15-55-45','0');
+
+CREATE TABLE user(
+    id VARCHAR(256) PRIMARY KEY,
+    nickname VARCHAR(256),
+    school VARCHAR(256),
+    vx VARCHAR(256),
+    avatar VARCHAR(256)
+);
+
+INSERT INTO user (id, nickname, school, vx, avatar)
+VALUES
+    ('1','尹建伟','玉泉','11256141919810','../../static/img/avatar2.jpg');
+
+
+CREATE TABLE complaintlist (
+  id VARCHAR(256) PRIMARY KEY,
+  plaintiff VARCHAR(256) ,
+  defendant VARCHAR(256) ,
+  posterAvatarUrl VARCHAR(256) ,
+  riderAvatarUrl VARCHAR(256) ,
+  reason VARCHAR(256) ,
+  valid VARCHAR(256)
+  );
+
+
+CREATE TABLE administrator (
+  id VARCHAR(256) PRIMARY KEY);

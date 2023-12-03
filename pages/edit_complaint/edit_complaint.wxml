@@ -1,0 +1,14 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view class="weui-input-box">
+        <label class="weui-label">申述理由:</label>
+        <input class="weui-input" bindinput="reason" placeholder="请输入申述理由"></input>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button class="weui-btn weui-btn_primary button" bindtap="tap">
+  <text>确认发送</text>
+</button>

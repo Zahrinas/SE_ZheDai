@@ -1,0 +1,96 @@
+/* pages/appeal_info/appeal_info.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  gap: 80rpx;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.nickname {
+  font-size: 32rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.reason {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #f2f2f2;
+  width: 90%;
+  text-align: justify;
+  line-height: 1.5em;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx; /* 添加容器顶部间距 */
+  margin-bottom: 30rpx; /* 添加容器底部间距 */
+}
+
+
+.chat {
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #19a8ad;
+  border-radius: 10rpx;
+  padding: 20rpx 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 90%; /* 新增宽度限制 */
+  max-width: 700rpx; /* 新增宽度限制，可根据需要调整 */
+  margin-left: auto; /* 左对齐 */
+  margin-right: auto; /* 右对齐 */
+}
+
+.valid,
+.invalid {
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  /* important用于将该项优先级提高，可以忽略上层布局的限制 */
+  margin-right: 50rpx !important; /* 添加按钮间距 */
+  margin-left: 50rpx !important; /* 添加按钮间距 */
+  padding: 20rpx 50rpx;
+  flex-grow: 1; /* 设置伸缩项 */
+}
+
+
+.valid {
+  background-color: #1AAD19;
+}
+
+.invalid {
+  background-color: #FF4D4F;
+}
